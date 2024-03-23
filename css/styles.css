@@ -1,4 +1,4 @@
-/* Resetear los estilos predeterminados */
+/* CSS apertura: Francisco */
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +19,8 @@ body {
     margin: 1em auto;
     border-radius: 5px;
     display: flex;
-    justify-content: center; /* Para centrar el contenido horizontalmente */
-    align-items: center; /* Para centrar el contenido verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 #menu ul {
@@ -29,11 +29,11 @@ body {
 
 #menu li {
     display: inline-block;
-    margin-right: 20px; /* Espacio entre elementos del menú */
+    margin-right: 20px;
 }
 
 #menu li:last-child {
-    margin-right: 0; /* Eliminar margen del último elemento */
+    margin-right: 0;
 }
 
 #menu li a {
@@ -59,7 +59,7 @@ body {
 /* Estilos del encabezado */
 #encabezado {
     background-color: rgb(255, 228, 196);
-    margin-bottom: 20px; /* Espacio entre el encabezado y el menú */
+    margin-bottom: 20px; 
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -67,14 +67,14 @@ body {
 
 #encabezado img {
     display: block;
-    margin: 0 auto; /* Centrar la imagen */
+    margin: 0 auto;
 }
 
 /* Estilos del pie de página */
 #pie {
     height: 60px;
     background-color: dimgrey;
-    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+    margin-top: 20px;
     padding: 5px;
     text-align: center;
     border-radius: 5px;
@@ -83,20 +83,20 @@ body {
 #pie h5 {
     font-size: 20px;
     color: white;
-    line-height: 60px; /* Alinear verticalmente el texto del pie de página */
+    line-height: 60px; 
 }
 
 /* Estilos de las imágenes */
 .img {
-    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    width: 100%;
     display: block;
-    margin: 0 auto; /* Centrar las imágenes */
+    margin: 0 auto;
 }
 
 /* Estilos del texto */
 .text {
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
-    line-height: 1.5; /* Espaciado entre líneas */
-    margin-bottom: 20px; /* Espacio entre párrafos */
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
