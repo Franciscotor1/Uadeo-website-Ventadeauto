@@ -1,0 +1,102 @@
+/* Resetear los estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    background-color: white;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos del menú */
+#menu {
+    height: 40px;
+    background-color: aquamarine;
+    margin: 1em auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* Para centrar el contenido horizontalmente */
+    align-items: center; /* Para centrar el contenido verticalmente */
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+#menu li:last-child {
+    margin-right: 0; /* Eliminar margen del último elemento */
+}
+
+#menu li a {
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+}
+
+#menu li a:hover {
+    color: crimson;
+    font-size: 20px;
+}
+
+/* Estilos del contenedor */
+#contenedor {
+    width: 900px;
+    background-color: bisque;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos del encabezado */
+#encabezado {
+    background-color: rgb(255, 228, 196);
+    margin-bottom: 20px; /* Espacio entre el encabezado y el menú */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#encabezado img {
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Estilos del pie de página */
+#pie {
+    height: 60px;
+    background-color: dimgrey;
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#pie h5 {
+    font-size: 20px;
+    color: white;
+    line-height: 60px; /* Alinear verticalmente el texto del pie de página */
+}
+
+/* Estilos de las imágenes */
+.img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    display: block;
+    margin: 0 auto; /* Centrar las imágenes */
+}
+
+/* Estilos del texto */
+.text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
