@@ -1,17 +1,3 @@
-/* CSS apertura: Francisco */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
-body {
-    background-color: white;
-    color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* Estilos del menú */
 #menu {
     height: 40px;
@@ -49,7 +35,7 @@ body {
 
 /* Estilos del contenedor */
 #contenedor {
-    width: 900px;
+    max-width: 900px; /* Modificado para que sea un ancho máximo en lugar de un ancho fijo */
     background-color: bisque;
     margin: 10px auto;
     padding: 20px;
@@ -72,31 +58,53 @@ body {
 
 /* Estilos del pie de página */
 #pie {
-    height: 60px;
     background-color: dimgrey;
     margin-top: 20px;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#pie div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #pie h5 {
     font-size: 20px;
     color: white;
-    line-height: 60px; 
+    line-height: 1;
 }
 
 /* Estilos de las imágenes */
 .img {
-    width: 100%;
+    max-width: 100%; /* Modificado para que las imágenes no excedan su contenedor */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
 
 /* Estilos del texto */
-.text {
-    text-align: center;
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.text, h2 {
+    color: blue; /* Color del texto ajustado */
+    text-align: center; /* Centrar el texto */
+}
+
+.subtitulo {
+    color: blue; /* Color ajustado */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos de los enlaces */
+.enlaces {
+    font-size: 20px; /* Tamaño de fuente ajustado */
+    color: blue; /* Color de texto ajustado */
+    text-decoration: none;
+}
+
+.enlaces:hover {
+    color: crimson; /* Color de texto al pasar el ratón ajustado */
 }
