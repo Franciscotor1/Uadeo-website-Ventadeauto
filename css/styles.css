@@ -1,4 +1,11 @@
 /* Estilos del menú */
+/* Estilo del fondo de la página */
+body {
+    background-color: black; /* Cambiado a negro */
+    margin: 0; /* Eliminado el margen predeterminado */
+    padding: 0; /* Eliminado el relleno predeterminado */
+}
+
 #menu {
     height: 40px;
     background-color: aquamarine;
@@ -36,24 +43,49 @@
 /* Estilos del contenedor */
 #contenedor {
     max-width: 900px; /* Modificado para que sea un ancho máximo en lugar de un ancho fijo */
-    background-color: bisque;
+    background-color: black; /* Cambiado a negro */
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Estilos del encabezado */
-#encabezado {
-    background-color: rgb(255, 228, 196);
-    margin-bottom: 20px; 
-    padding: 10px;
-    border-radius: 5px;
+/* Estilos de fondo negro */
+.fondo-negro {
+    background-color: black;
+}
+
+/* Estilos de las tarjetas */
+.tarjeta {
+    background-color: pink; /* Color rosa */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px; /* Reducido el padding */
+    transition: background-color 0.3s ease; /* Transición para el efecto */
+}
+
+.tarjeta:hover {
+    background-color: #c8a2c8; /* Color lila al pasar el ratón */
+}
+
+.tarjeta .contenido {
     text-align: center;
 }
 
-#encabezado img {
+.tarjeta h2 {
+    color: blue;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.tarjeta p.text {
+    color: blue;
+    text-align: center;
 }
 
 /* Estilos del pie de página */
@@ -79,32 +111,65 @@
     line-height: 1;
 }
 
-/* Estilos de las imágenes */
-.img {
-    max-width: 100%; /* Modificado para que las imágenes no excedan su contenedor */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Estilos de la nueva fuente Lilita One */
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Estilos del texto */
-.text, h2 {
-    color: blue; /* Color del texto ajustado */
-    text-align: center; /* Centrar el texto */
+/* Estilos de la caja de contacto */
+.contacto {
+    background-color: #eaeaea; /* Color de fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
+    padding: 30px; /* Espaciado interno aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: center; /* Alineación del texto al centro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.subtitulo {
-    color: blue; /* Color ajustado */
-    text-align: center; /* Centrar el texto */
+.contacto h2 {
+    margin-bottom: 20px; /* Espaciado inferior para el título */
 }
 
-/* Estilos de los enlaces */
-.enlaces {
-    font-size: 20px; /* Tamaño de fuente ajustado */
-    color: blue; /* Color de texto ajustado */
-    text-decoration: none;
+.contacto form {
+    display: grid; /* Cambiar a disposición de cuadrícula */
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 10px; /* Espacio entre los elementos */
 }
 
-.enlaces:hover {
-    color: crimson; /* Color de texto al pasar el ratón ajustado */
+.campo {
+    display: flex; /* Elementos de formulario en línea */
+    flex-direction: column; /* Apilar elementos verticalmente */
+}
+
+.campo label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.campo input,
+.campo textarea {
+    padding: 8px; /* Aumentar el relleno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.boton {
+    text-align: center; /* Alinear al centro */
+}
+
+.boton input[type="submit"] {
+    padding: 10px 20px; /* Aumentar el relleno */
+    background-color: #4caf50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton input[type="submit"]:hover {
+    background-color: #45a049; /* Cambiar color al pasar el ratón */
 }

@@ -6,17 +6,24 @@
     <title>PRACTICAS</title>
     <!-- Enlace a tu archivo CSS externo -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Enlace a Google Fonts para importar la fuente Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="contenedor">
+    <div id="contenedor" class="fondo-negro">
         <!-- Menú de navegación -->
         <nav id="menu">
             <ul>
                 <li><a href="#Inicio">INICIO</a></li>
-                <li><a href="#Toyota">TOYOTA</a></li>
-                <li><a href="#Nissan">NISSAN</a></li>
-                <li><a href="#Ford">FORD</a></li>
+                <li><a href="toyota.html">TOYOTA</a></li>
+                <li><a href="nissan.html">NISSAN</a></li>
+                <li><a href="ford.html">FORD</a></li>
                 <li><a href="#Contacto">CONTACTO</a></li>
+                <!-- Botón para ir a la página de autos -->
+                <li><a href="#Inicio">AUTOS</a></li>
             </ul>
         </nav>
 
@@ -28,57 +35,114 @@
         </div>
         
         <!-- Secciones -->
-        <section id="Inicio">
-            <h2>Venta de autos Automata</h2>
-            <center>
-                <img src="../img/inicio01.jpg" alt="Toyota Image" class="img"><br>           
-            </center>
-            <p class="text">Venta de automoviles en Mazatlán, Sinaloa, México.
-                Zona Dorada, # 5548
-                La mejor variedad de deportivos
-                <h1>Camionetas ultimo modelo</h1>
-                <h1>Deportivos</h1>
-            </p>
+        <section id="Inicio" class="tarjeta">
+            <div class="contenido">
+                <h2 class="lilita-one-regular">Venta de autos Automata</h2>
+                <center>
+                    <img src="../img/inicio01.jpg" alt="Toyota Image" class="img"><br>           
+                </center>
+                <p class="text">Venta de automoviles en Mazatlán, Sinaloa, México.
+                    Zona Dorada, # 5548
+                    La mejor variedad de deportivos
+                    <h1>Camionetas ultimo modelo</h1>
+                    <h1>Deportivos</h1>
+                </p>
+            </div>
+            <!-- Botón para ver más detalles -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="practicas.html#Inicio" style="text-decoration: none;">
+                    <button style="padding: 10px 20px; font-size: 16px;">Ver más detalles</button>
+                </a>
+            </div>
             <hr>
         </section>
 
-        <section id="Toyota">
-            <h2>Toyota: Innovación y Calidad</h2>
-            <center>
-                <img src="../img/Image12.png" alt="Toyota Image" class="img"><br>           
-            </center>
-            <p class="text">Descubre la excelencia en ingeniería y calidad que Toyota ofrece en sus vehículos.</p>
+        <section id="Toyota" class="tarjeta">
+            <div class="contenido">
+                <h2 class="lilita-one-regular">Toyota: Innovación y Calidad</h2>
+                <center>
+                    <img src="../img/Image12.png" alt="Toyota Image" class="img"><br>           
+                </center>
+                <p class="text">Descubre la excelencia en ingeniería y calidad que Toyota ofrece en sus vehículos.</p>
+            </div>
+            <!-- Botón para ver más detalles -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="toyota.html" style="text-decoration: none;">
+                    <button style="padding: 10px 20px; font-size: 16px;">Ver más detalles</button>
+                </a>
+            </div>
             <hr>
         </section>
 
-        <section id="Nissan">
-            <h2>Nissan: Innovación y Variedad</h2>
-            <center>
-                <img src="../img/nissan01.jpg" alt="Nissan Image" class="img"><br>  
-            </center>
-            <p class="text">Explora la diversidad de modelos y tecnologías que Nissan tiene para ti.</p>
+        <section id="Nissan" class="tarjeta">
+            <div class="contenido">
+                <h2 class="lilita-one-regular">Nissan: Innovación y Variedad</h2>
+                <center>
+                    <img src="../img/nissan01.jpg" alt="Nissan Image" class="img"><br>  
+                </center>
+                <p class="text">Explora la diversidad de modelos y tecnologías que Nissan tiene para ti.</p>
+            </div>
+            <!-- Botón para ver más detalles -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="nissan.html" style="text-decoration: none;">
+                    <button style="padding: 10px 20px; font-size: 16px;">Ver más detalles</button>
+                </a>
+            </div>
             <br><hr>
         </section>
 
-        <section id="Ford">
-            <h2>Ford: Potencia y Tecnología</h2>
-            <center>
-                <img src="../img/ford01.jpg" alt="Ford Image" class="img"><br>
-            </center>
-            <p class="text">Experimenta la potencia y las últimas innovaciones tecnológicas en los vehículos Ford.</p>
+        <section id="Ford" class="tarjeta">
+            <div class="contenido">
+                <h2 class="lilita-one-regular">Ford: Potencia y Tecnología</h2>
+                <center>
+                    <img src="../img/ford01.jpg" alt="Ford Image" class="img"><br>
+                </center>
+                <p class="text">Experimenta la potencia y las últimas innovaciones tecnológicas en los vehículos Ford.</p>
+            </div>
+            <!-- Botón para ver más detalles -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="ford.html" style="text-decoration: none;">
+                    <button style="padding: 10px 20px; font-size: 16px;">Ver más detalles</button>
+                </a>
+            </div>
             <br><hr>
         </section>
 
-        <section id="Contacto">
-            <h2>Contacto</h2>
-            <p class="text">Contactanos.</p>
+        <section id="Contacto" class="tarjeta">
+            <div class="contenido">
+                <h2 class="lilita-one-regular">Contacto</h2>
+                <div class="contacto">
+                    <h2 class="lilita-one-regular">¡Contáctanos!</h2>
+                    <form>
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre"><br>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono"><br>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje"></textarea><br>
+                        </div>
+                        <div class="boton">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
             <br><hr>
         </section>
 
         <!-- Pie de página -->
         <footer id="pie">
             <div>
-                <h5>Todos los derechos reservados</h5>
+                <h5 class="lilita-one-regular">Todos los derechos reservados</h5>
             </div>
         </footer>
     </div>
