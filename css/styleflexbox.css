@@ -1,0 +1,66 @@
+/* Estilos para el contenedor del flexbox */
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para los números */
+.numero {
+    width: 50px;
+    height: 50px;
+    background-color: #4682B4; /* Azul acero */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 50%; /* Hacer el número un círculo */
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición para el efecto al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre los números */
+.numero:hover {
+    background-color: #4169E1; /* Azul real */
+}
+
+/* Estilos para la tarjeta */
+.tarjeta {
+    background-color: #8B0000; /* Rojo oscuro */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Transición para el efecto */
+    max-width: 600px; /* Ancho máximo de la tarjeta */
+    text-align: center;
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.tarjeta:hover {
+    background-color: #CD5C5C; /* Rojo más claro al pasar el ratón */
+}
+
+/* Estilos para el contenedor del botón */
+.boton-container {
+    text-align: center; /* Centrar el botón */
+    margin-top: 20px; /* Separación del flexbox */
+}
+
+/* Estilos para el botón de regresar */
+.boton-regresar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4682B4; /* Azul acero */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición para el efecto */
+}
+
+.boton-regresar:hover {
+    background-color: #4169E1; /* Azul real */
+}
