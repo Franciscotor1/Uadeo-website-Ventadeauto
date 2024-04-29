@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Estilos adicionales para la tarjeta */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #FF0000; /* Color rojo */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px; /* Aumentar el padding */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            max-width: 600px; /* Ancho máximo */
+            text-align: center; /* Centrar el texto */
+            color: white; /* Color de texto blanco */
+            font-family: Arial, sans-serif; /* Tipo de letra */
+        }
+
+        .card:hover {
+            background-color: #800080; /* Color púrpura */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos adicionales para los inputs */
+        .input-container {
+            margin-top: 20px;
+        }
+
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-container input {
+            width: 250px; /* Ancho aumentado */
+            padding: 15px; /* Aumentar el padding */
+            font-size: 18px; /* Tamaño de fuente aumentado */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px; /* Margen inferior aumentado */
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilos para el botón */
+        button {
+            padding: 15px 30px; /* Aumentar el padding */
+            font-size: 18px; /* Tamaño de fuente aumentado */
+            background-color: #800080; /* Color púrpura */
+            color: white; /* Color de texto blanco */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4B0082; /* Color púrpura más oscuro al pasar el cursor */
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <div class="card-container">
+        <div class="card">
+            <h2>Calculadora de IMC</h2>
+            <!-- Contenedor para los inputs -->
+            <div class="input-container">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso"><br><br>
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura">
+            </div>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <div id="resultado"></div>
+            <!-- Botón para regresar al index -->
+            <button onclick="window.location.href='../index.html'" style="margin-top: 20px;">Regresar al Index</button>
+        </div>
+    </div>
+    <script src="../js/imc.js"></script>
+</body>
+</html>
+
