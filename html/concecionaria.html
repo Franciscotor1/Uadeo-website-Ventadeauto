@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Automóviles Toyota</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #7ed6df; /* Color azul verdoso */
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container label,
+        .form-container input,
+        .form-container select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .resultado {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            display: none;
+        }
+
+        /* Efecto de cambio de color al pasar el cursor sobre la cotización */
+        .form-container:hover {
+            background-color: #ffcccc; /* Rojo rosado */
+        }
+
+        /* Estilo del botón para regresar al index */
+        .regresar {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000; /* Color negro */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilo del contenedor del botón */
+        .boton-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Cotización de Automóviles Toyota</h1>
+            <label for="num-cotizacion">Num-Cotización:</label>
+            <input type="text" id="num-cotizacion">
+
+            <label for="descripcion">Descripción:</label>
+            <select id="descripcion">
+                <option value="Yaris SX">Yaris SX</option>
+                <option value="Corolla">Corolla</option>
+                <option value="Camry">Camry</option>
+                <option value="RAV4">RAV4</option>
+                <option value="Spider">Spider</option>
+                <option value="Tundra">Tundra</option>
+                <option value="Tacoma">Tacoma</option>
+                <option value="Hullux">Hullux</option>
+                <!-- Agregar más modelos si es necesario -->
+            </select>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio">
+
+            <label for="porcentaje-pago">Porcentaje de pago Inicial:</label>
+            <select id="porcentaje-pago">
+                <option value="0.25">25%</option>
+                <option value="0.5">50%</option>
+                <option value="0.6">60%</option>
+                <option value="0.7">70%</option>
+                <option value="0.9">90%</option>
+                <option value="1">100%</option>
+            </select>
+
+            <label for="plazo">Plazo (en meses):</label>
+            <input type="number" id="plazo">
+
+            <button id="calcular">Calcular Cotización</button>
+
+            <!-- Contenedor del botón para mantenerlo separado -->
+            <div class="boton-container">
+                <!-- Botón para regresar al index -->
+                <a href="../index.html" class="regresar">Regresar al Index</a>
+            </div>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="../js/conceops.js"></script>
+</body>
+</html>
